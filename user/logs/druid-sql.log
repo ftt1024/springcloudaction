@@ -1,0 +1,140 @@
+[2021-05-30 00:40:46] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT code,name,sex,birth_date,cn_type,cn FROM user WHERE code=? 
+[2021-05-30 00:40:46] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [C00001]
+[2021-05-30 00:40:46] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 00:40:46] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 12.205 millis. SELECT code,name,sex,birth_date,cn_type,cn FROM user WHERE code=? 
+[2021-05-30 00:40:46] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 00:40:46] DEBUG 134 statementLog - {conn-10005, pstmt-20001} created. SELECT  code,name,sex,birth_date,cn_type,cn  FROM user
+[2021-05-30 00:40:46] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Parameters : []
+[2021-05-30 00:40:46] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Types : []
+[2021-05-30 00:40:46] DEBUG 134 statementLog - {conn-10005, pstmt-20001} executed. 1.4394 millis. SELECT  code,name,sex,birth_date,cn_type,cn  FROM user
+[2021-05-30 00:40:46] DEBUG 134 statementLog - {conn-10005, pstmt-20001} clearParameters. 
+[2021-05-30 00:43:46] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT code,name,sex,birth_date,cn_type,cn FROM user WHERE code=? 
+[2021-05-30 00:43:46] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [C00001]
+[2021-05-30 00:43:46] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 00:43:46] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 12.6499 millis. SELECT code,name,sex,birth_date,cn_type,cn FROM user WHERE code=? 
+[2021-05-30 00:43:46] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 00:43:46] DEBUG 134 statementLog - {conn-10005, pstmt-20001} created. SELECT  code,name,sex,birth_date,cn_type,cn  FROM user
+[2021-05-30 00:43:46] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Parameters : []
+[2021-05-30 00:43:46] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Types : []
+[2021-05-30 00:43:46] DEBUG 134 statementLog - {conn-10005, pstmt-20001} executed. 1.4094 millis. SELECT  code,name,sex,birth_date,cn_type,cn  FROM user
+[2021-05-30 00:43:46] DEBUG 134 statementLog - {conn-10005, pstmt-20001} clearParameters. 
+[2021-05-30 00:47:45] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT code,name,sex,birth_date,cn_type,cn FROM user WHERE code=? 
+[2021-05-30 00:47:45] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [C00001]
+[2021-05-30 00:47:45] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 00:47:45] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 15.7207 millis. SELECT code,name,sex,birth_date,cn_type,cn FROM user WHERE code=? 
+[2021-05-30 00:47:45] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 00:47:45] DEBUG 134 statementLog - {conn-10005, pstmt-20001} created. SELECT  code,name,sex,birth_date,cn_type,cn  FROM user
+[2021-05-30 00:47:45] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Parameters : []
+[2021-05-30 00:47:45] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Types : []
+[2021-05-30 00:47:45] DEBUG 134 statementLog - {conn-10005, pstmt-20001} executed. 1.4028 millis. SELECT  code,name,sex,birth_date,cn_type,cn  FROM user
+[2021-05-30 00:47:45] DEBUG 134 statementLog - {conn-10005, pstmt-20001} clearParameters. 
+[2021-05-30 00:58:29] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT code,name,sex,birth_date,cn_type,cn FROM user WHERE code=? 
+[2021-05-30 00:58:29] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [C00001]
+[2021-05-30 00:58:29] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 00:58:29] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 12.5599 millis. SELECT code,name,sex,birth_date,cn_type,cn FROM user WHERE code=? 
+[2021-05-30 00:58:29] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 00:58:29] DEBUG 134 statementLog - {conn-10005, pstmt-20001} created. SELECT  code,name,sex,birth_date,cn_type,cn  FROM user
+[2021-05-30 00:58:29] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Parameters : []
+[2021-05-30 00:58:29] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Types : []
+[2021-05-30 00:58:29] DEBUG 134 statementLog - {conn-10005, pstmt-20001} executed. 1.3342 millis. SELECT  code,name,sex,birth_date,cn_type,cn  FROM user
+[2021-05-30 00:58:29] DEBUG 134 statementLog - {conn-10005, pstmt-20001} clearParameters. 
+[2021-05-30 01:05:18] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT * FROM user
+       WHERE  name like '%?%'
+[2021-05-30 01:05:18] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 01:09:15] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 01:09:15] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [我]
+[2021-05-30 01:09:15] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 01:09:15] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 67.6848 millis. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 01:09:15] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 01:14:58] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 01:14:58] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [我]
+[2021-05-30 01:14:58] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 01:14:58] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 15.7631 millis. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 01:14:58] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 01:17:54] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 01:17:54] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [我]
+[2021-05-30 01:17:54] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 01:17:54] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 13.2826 millis. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 01:17:54] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 01:21:44] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 01:21:44] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [我]
+[2021-05-30 01:21:44] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 01:21:44] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 14.1379 millis. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 01:21:44] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 01:23:17] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 01:23:17] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [我]
+[2021-05-30 01:23:17] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 01:23:17] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 11.9842 millis. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 01:23:17] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 01:26:41] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT * FROM user
+       WHERE  code = ?
+[2021-05-30 01:26:41] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [C00001]
+[2021-05-30 01:26:41] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 01:26:41] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 11.4618 millis. SELECT * FROM user
+       WHERE  code = ?
+[2021-05-30 01:26:41] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 01:26:41] DEBUG 134 statementLog - {conn-10005, pstmt-20001} created. SELECT  code,name,sex,birth_date,cn_type,cn  FROM user
+[2021-05-30 01:26:41] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Parameters : []
+[2021-05-30 01:26:41] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Types : []
+[2021-05-30 01:26:41] DEBUG 134 statementLog - {conn-10005, pstmt-20001} executed. 1.2685 millis. SELECT  code,name,sex,birth_date,cn_type,cn  FROM user
+[2021-05-30 01:26:41] DEBUG 134 statementLog - {conn-10005, pstmt-20001} clearParameters. 
+[2021-05-30 22:18:23] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 22:18:23] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [我]
+[2021-05-30 22:18:23] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 22:18:23] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 13.0768 millis. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 22:18:23] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 22:18:23] DEBUG 134 statementLog - {conn-10005, pstmt-20001} created. SELECT * FROM user
+       WHERE  code = ?
+[2021-05-30 22:18:23] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Parameters : [C00001]
+[2021-05-30 22:18:23] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Types : [VARCHAR]
+[2021-05-30 22:18:23] DEBUG 134 statementLog - {conn-10005, pstmt-20001} executed. 1.5208 millis. SELECT * FROM user
+       WHERE  code = ?
+[2021-05-30 22:18:23] DEBUG 134 statementLog - {conn-10005, pstmt-20001} clearParameters. 
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20000} created. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Parameters : [我]
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20000} Types : [VARCHAR]
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20000} executed. 11.4398 millis. SELECT * FROM user
+       WHERE  name like  concat('%',?,'%')
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20000} clearParameters. 
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20001} created. INSERT INTO user  ( code,
+
+name,
+sex )  VALUES  ( ?,
+
+?,
+? )
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Parameters : [C00002, 2号员工, 0]
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20001} Types : [VARCHAR, VARCHAR, VARCHAR]
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20001} executed. 61.7162 millis. INSERT INTO user  ( code,
+
+name,
+sex )  VALUES  ( ?,
+
+?,
+? )
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20001} clearParameters. 
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20002} created. SELECT  code,password,name,sex,birth_date,cn_type,cn,mobile,home_phone,email,last_deucation,degree_name,joinwork_date,enable_state,trnsevent,psn_type,crean_time,retire_date,major_corp,dept_name,job_glbdef1,post_name,seq,job_name,job_type_name,job_grade_name,job_rank_name,is_pass,ts,age,org_code,pk_org,superior,leader,dept_code,post_code,job_code,portrait_url,mp,create_id,create_time,update_id,update_time,lcsszbm,lcsgrzs,grjj,qht,cyzg,portrait_url_richgo,wechat_qr_code,title_type,title_value,mp_portrait_url,mobile_is_show,wechat_id,status,portrait_url_no_auth,portrait_no_auth_status,mz,zzmm,hkxz,tsrc,rztsrc,principal  FROM user
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20002} Parameters : []
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20002} Types : []
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20002} executed. 1.2379 millis. SELECT  code,password,name,sex,birth_date,cn_type,cn,mobile,home_phone,email,last_deucation,degree_name,joinwork_date,enable_state,trnsevent,psn_type,crean_time,retire_date,major_corp,dept_name,job_glbdef1,post_name,seq,job_name,job_type_name,job_grade_name,job_rank_name,is_pass,ts,age,org_code,pk_org,superior,leader,dept_code,post_code,job_code,portrait_url,mp,create_id,create_time,update_id,update_time,lcsszbm,lcsgrzs,grjj,qht,cyzg,portrait_url_richgo,wechat_qr_code,title_type,title_value,mp_portrait_url,mobile_is_show,wechat_id,status,portrait_url_no_auth,portrait_no_auth_status,mz,zzmm,hkxz,tsrc,rztsrc,principal  FROM user
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20002} clearParameters. 
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20003} created. SELECT * FROM user
+       WHERE  code = ?
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20003} Parameters : [C00001]
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20003} Types : [VARCHAR]
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20003} executed. 1.2784 millis. SELECT * FROM user
+       WHERE  code = ?
+[2021-05-30 22:22:33] DEBUG 134 statementLog - {conn-10005, pstmt-20003} clearParameters. 

@@ -1,0 +1,97 @@
+# 指定运行端口
+server:
+  port: 8011
+  shutdown: graceful # 优雅关机
+
+# 指定服务名称
+spring:
+  application:
+    name: eureka-client
+
+# actuator配置
+management:
+  server:
+    port: 10211
+  #    servlet:
+  #      context-path: /
+  #    ssl:
+  #      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true # 启用shutdown端点优雅关机 POST http://localhost:10211/actuator/shutdown
+
+# eureka配置
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+    status-page-url: baidu.com
+    # 发送心跳给 eureka server 端的频率，默认 30 秒
+    lease-renewal-interval-in-seconds: 30
+    # Eureka Server 至上一次收到 client 的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则移除该 Instance，默认 90 秒
+    lease-expiration-duration-in-seconds: 90
+    metadata-map:
+      service-name: client
+  client:
+    # 开启健康检查
+    healthcheck:
+      enabled: true
+    # 注册到Eureka的注册中心
+    register-with-eureka: true
+    # 获取注册实例列表
+    fetch-registry: true
+    #定义去eureka服务端获取服务列表的时间间隔
+    registry-fetch-interval-seconds: 30
+    service-url:
+      # 配置注册中心地址
+      defaultZone: http://root:root@standalone:8000/eureka/
+logging:
+  level:
+    cn:
+      sf:
+        eurekaclient:
+          service:
+            CustomerService: debug
+        userapi:
+          service:
+            UserService: info
+feign:
+  client:
+    config:
+      # 全局配置
+      default:
+        connectTimeout: 1000
+        readTimeout: 1000
+        loggerLevel: BASIC
+      # 单独某个服务配置
+      customer-service:
+        connectTimeout: 500
+        readTimeout: 500
+        loggerLevel: full
+      # 单独某个服务配置
+      user-service:
+        connectTimeout: 100
+        readTimeout: 100
+        loggerLevel: full
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 1024
+    response:
+      enabled: true
+  httpclient:
+    enabled: true
+#  okhttp: # 启用okhttp
+#    enabled: true
+  hystrix:
+    enabled: true
+  # 开启sentinel
+  sentinel:
+    enabled: true #熔断

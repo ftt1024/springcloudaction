@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace= "cn.sf.user.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="cn.sf.user.model.User">
+        <id column="code" property="code" jdbcType="VARCHAR"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="sex" property="sex" jdbcType="VARCHAR"/>
+        <result column="birth_date" property="birthDate" jdbcType="TIMESTAMP"/>
+        <result column="cn_type" property="cnType" jdbcType="TINYINT"/>
+        <result column="cn" property="cn" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        code, password, name, sex, birth_date, cn_type, cn, mobile, home_phone, email, last_deucation,
+        degree_name, joinwork_date, enable_state, trnsevent, psn_type, crean_time, retire_date,
+        major_corp, dept_name, job_glbdef1, post_name, seq, gwxl_name, job_name, job_type_name, job_grade_name,
+        job_rank_name, is_pass, ts, age, org_code, pk_org, superior, leader, dept_code, post_code,
+        lcsszbm,lcsgrzs,grjj,qht,cyzg,
+        job_code, portrait_url, mp, create_id, create_time, update_id, update_time, portrait_url_richgo, wechat_qr_code,
+        title_type,title_value,mp_portrait_url,mobile_is_show,wechat_id,status,portrait_url_no_auth,portrait_no_auth_status
+        mz, zzmm, hkxz, tsrc, rztsrc, principal
+    </sql>
+
+    <select id = "selectByFullCondition" resultMap="BaseResultMap" parameterType="cn.sf.user.model.User">
+      SELECT * FROM user
+      <where>
+          <if test="code != null and code != '' ">
+              and code = #{code}
+          </if>
+          <if test="name != null and name != '' ">
+            and name like  concat('%',#{name,jdbcType=VARCHAR},'%')
+          </if>
+          <if test="cn != null and cn != '' ">
+              and cn = #{cn}
+          </if>
+      </where>
+    </select>
+
+</mapper>

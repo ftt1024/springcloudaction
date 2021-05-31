@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f797e745-8c35-4c3a-b8d7-a4675cd0d363" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/$PROJECT_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/fTt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/basic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/cn/sf/CodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/cn/sf/user/controller/EmpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/cn/sf/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/cn/sf/user/entity/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/cn/sf/user/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/cn/sf/user/mapper/EmpMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/cn/sf/user/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/cn/sf/user/service/IEmpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/cn/sf/user/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/cn/sf/user/service/impl/EmpServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/java/cn/sf/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/resources/user/EmpMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/main/resources/user/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/CodeGenerator$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/CodeGenerator$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/CodeGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/user/controller/EmpController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/user/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/user/entity/Emp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/user/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/user/mapper/EmpMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/user/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/user/service/IEmpService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/user/service/IUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/user/service/impl/EmpServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/cn/sf/user/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/user/EmpMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/target/classes/user/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/src/main/java/cn/sf/common/constant/Tips.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/src/main/java/cn/sf/common/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/target/classes/cn/sf/common/constant/Tips.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/target/classes/cn/sf/common/util/JsonUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/target/common-util-1.0-SNAPSHOT-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/target/common-util-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-util/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/cn/sf/customer/CustomerServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/cn/sf/customer/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/cn/sf/customer/entity/CustomerRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/test/java/cn/sf/customer/CustomerServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/EurekaClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/config/FeignConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/config/ServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/entity/customer/CustomerParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/interceptor/CnsfLoadBalancerInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/interceptor/CustomRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/interceptor/FeignBasicAuthRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/service/CustomerServiceFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/resources/application-cluster.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client/src/test/java/cn/sf/eurekaclient/EurekaClientApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/java/cn/sf/eureka/EurekaServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/java/cn/sf/eureka/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/java/cn/sf/eureka/listener/EurekaStateChangeListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/application-a.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/application-b.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/application-c.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/test/java/cn/sf/eureka/EurekaServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/GatewayApolloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/GatewayNacosApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/config/NacosGatewayDefineConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/GatewayContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/GatewayRequestLogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/GatewayResponseLogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/LogRequestGlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/LogResponseGlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/service/NacosDynamicRouteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/service/NacosDynamicRouteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application-apollo.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application-nacos.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/test/java/cn/sf/gateway/GatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/api-2021-05-29-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/api-2021-05-29-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/api-2021-05-30-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/api-2021-05-30-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/debug-2021-05-29-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/debug-2021-05-30-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/debug-2021-05-30-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/error-2021-05-29-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/error-2021-05-30-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/info-2021-05-29-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/info-2021-05-29-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/info-2021-05-30-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/warn-2021-05-29-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/warn-2021-05-29-2.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/2021-05/warn-2021-05-30-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/druid-sql.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/warn.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloudaction.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/cn/sf/userapi/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/java/cn/sf/userapi/service/UserServiceFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/logs/2021-05/api-2021-05-29-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/logs/2021-05/debug-2021-05-29-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/logs/2021-05/error-2021-05-29-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/logs/2021-05/info-2021-05-29-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/logs/2021-05/warn-2021-05-29-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/logs/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/logs/druid-sql.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/logs/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/logs/info.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/logs/warn.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/aop/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/config/GracefulShutdownTomcat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/entity/BaseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/entity/UserBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/entity/UserVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/util/ObjectUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/application-cluster.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/application-two.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/test/java/cn/sf/user/UserApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven\repo" />
+        <option name="mavenHome" value="E:/sw/apache-maven-3.5.0" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1tAODUKhnozXbDwuKE6iHQfIO7P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\github\springcloudaction" />
+      <recent name="F:\github\springcloudaction\basic\src\main\resources" />
+      <recent name="F:\github\springcloudaction\basic\src\main\java" />
+      <recent name="F:\github\springcloudaction\gateway\src\main\resources" />
+      <recent name="F:\github\springcloudaction\customer\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.sf.eurekaclient.service" />
+      <recent name="cn.sf.userapi.service" />
+      <recent name="cn.sf.user.service" />
+      <recent name="cn.sf" />
+      <recent name="cn.sf.gateway" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\github\springcloudaction\user\src\main\resources\mapper" />
+      <recent name="F:\github\springcloudaction\user\src\main\java\cn\sf\user\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserApplication">
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.sf.CodeGenerator" />
+      <module name="basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.sf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.sf.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.sf.user" />
+      <option name="MAIN_CLASS_NAME" value="cn.sf.user.UserApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.sf.user.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.sf.user" />
+      <option name="MAIN_CLASS_NAME" value="cn.sf.user.UserApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplicationTests.testSelectByCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.sf.user.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.sf.user" />
+      <option name="MAIN_CLASS_NAME" value="cn.sf.user.UserApplicationTests" />
+      <option name="METHOD_NAME" value="testSelectByCondition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="customer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.customer.CustomerServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="customer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cnsf.customer.CustomerServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="customer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.sf.customer.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.customer.CustomerServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication-a" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.eureka.EurekaServerApplication" />
+      <option name="ACTIVE_PROFILES" value="a" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication-b" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.eureka.EurekaServerApplication" />
+      <option name="ACTIVE_PROFILES" value="b" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication-c" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.eureka.EurekaServerApplication" />
+      <option name="ACTIVE_PROFILES" value="c" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.eurekaclient.EurekaClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.eureka.EurekaServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication-nacos" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.gateway.GatewayApplication" />
+      <option name="ACTIVE_PROFILES" value="nacos" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="User1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.sf.user.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.user.User1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.userapi.UserApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication-two" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.user.UserApplication" />
+      <option name="ACTIVE_PROFILES" value="two" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.sf.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CodeGenerator" />
+      <item itemvalue="JUnit.UserApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.UserApplicationTests.testSelectByCondition" />
+      <item itemvalue="JUnit.UserApplicationTests" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication-a" />
+      <item itemvalue="Spring Boot.EurekaApplication-b" />
+      <item itemvalue="Spring Boot.EurekaApplication-c" />
+      <item itemvalue="Spring Boot.EurekaClientApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.UserApplication-two" />
+      <item itemvalue="Spring Boot.UserApiApplication" />
+      <item itemvalue="Spring Boot.CustomerServiceApplication" />
+      <item itemvalue="Spring Boot.CustomerServiceApplication (1)" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication-nacos" />
+      <item itemvalue="Spring Boot.User1Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserApplicationTests" />
+        <item itemvalue="Application.CodeGenerator" />
+        <item itemvalue="JUnit.UserApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.UserApplicationTests.testSelectByCondition" />
+        <item itemvalue="Spring Boot.User1Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f797e745-8c35-4c3a-b8d7-a4675cd0d363" name="Default Changelist" comment="" />
+      <created>1622208307410</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622208307410</updated>
+      <workItem from="1622208314219" duration="8750000" />
+      <workItem from="1622242844956" duration="21641000" />
+      <workItem from="1622290736175" duration="15248000" />
+      <workItem from="1622336541846" duration="15185000" />
+      <workItem from="1622381694567" duration="5781000" />
+      <workItem from="1622433436393" duration="13900000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

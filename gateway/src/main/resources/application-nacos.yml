@@ -1,0 +1,35 @@
+server:
+  port: 2003
+
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
+    data-id: gateway
+    group: NAOCS-SPRING-CLOUD-GATEWAY
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: baidu_route
+#          uri: http://www.baidu.com
+#          predicates:
+#            - Path=/baidu
+
+# actuator配置
+management:
+  server:
+    port: 12003
+#    servlet:
+#      context-path: /
+#    ssl:
+#      enabled: false
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  endpoint:
+#    health:
+#      show-details: always
+#    shutdown:
+#      enabled: true # 启用shutdown端点优雅关机 POST http://localhost:10212/actuator/shutdown

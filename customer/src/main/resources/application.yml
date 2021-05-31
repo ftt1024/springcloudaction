@@ -1,0 +1,52 @@
+# 指定运行端口
+server:
+  port: 8021
+  shutdown: graceful
+  timeout-per-shutdown-phase: 20
+
+# 指定服务名称
+spring:
+  application:
+    name: customer-service
+
+# actuator配置
+management:
+  server:
+    port: 10221
+  #    servlet:
+  #      context-path: /
+  #    ssl:
+  #      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true # 启用shutdown端点优雅关机 POST http://localhost:10212/actuator/shutdown
+
+# eureka配置
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+    # 发送心跳给 eureka server 端的频率，默认 30 秒
+    lease-renewal-interval-in-seconds: 30
+    # Eureka Server 至上一次收到 client 的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则移除该 Instance，默认 90 秒
+    lease-expiration-duration-in-seconds: 60
+    metadata-map:
+      service-name: customer
+  client:
+    # 开启健康检查
+    healthcheck:
+      enabled: true
+    # 注册到Eureka的注册中心
+    register-with-eureka: true
+    # 获取注册实例列表
+    fetch-registry: true
+    service-url:
+      # 配置注册中心地址
+      defaultZone: http://root:root@standalone:8000/eureka/
+

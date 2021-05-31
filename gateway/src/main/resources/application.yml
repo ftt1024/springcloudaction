@@ -1,0 +1,111 @@
+server:
+  port: 2001
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      # 全局默认过滤器
+      default-filters:
+        - AddResponseHeader=X-Response-Foo, Bar
+        - AddRequestHeader=X-Request-Foo, Bar
+        # 响应头过滤器，对输出的响应设置其头部属性名称为X-Response-Default-MyName，值为example；
+        # 如果有多个参数则重写一行设置不同的参数
+        - AddResponseHeader=Response-Default-Name,cnsf
+        - AddResponseHeader=Response-From,cnsf
+      routes:
+#        - id: between_route
+#          uri: http://127.0.0.1:8011
+#          predicates:
+#            - Between=${weihuTime}
+#        - id: after_route
+#          uri: http://127.0.0.1:8013
+#          predicates:
+#            - After=2021-05-30T09:33:47.789+08:00
+#        - id: before_route
+#          uri: http://127.0.0.1:8012
+#          predicates:
+#            - Before=2021-05-30T09:30:47.789+08:00
+        - id: user_path_route
+          uri: lb://user-service
+          predicates:
+            - Path=/user/**
+          filters:
+            # 添加请求路径的前缀 /api
+            - PrefixPath=/api
+            - name: Retry
+              args:
+                retries: 3
+                series: SERVER_ERROR
+        - id: customer_path_route
+          uri: lb://custoemr-service
+          predicates:
+            - Path=/customer/**
+          filters:
+            # 添加请求路径的前缀 /api
+            - PrefixPath=/api
+            - name: Retry
+              args:
+                retries: 3
+                series: SERVER_ERROR
+        - id: client_path_route
+          uri: lb://eureka-client # http://localhost:8011
+          predicates:
+            - Path=/bus/api/feign/**
+          filters:
+            #去除前缀：1表示过滤1个路径，2表示两个路径，以此类推
+            - StripPrefix=1
+            - name: Retry
+              args:
+                retries: 3
+                series: SERVER_ERROR
+        - id: path_route
+          uri: http://c.biancheng.net
+          predicates:
+            - Path=/spring_cloud
+
+# actuator配置
+management:
+  server:
+    port: 12001
+  #    servlet:
+  #      context-path: /
+  #    ssl:
+  #      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true # 启用shutdown端点优雅关机 POST http://localhost:10212/actuator/shutdown
+
+
+# eureka配置
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+    status-page-url: baidu.com
+    # 发送心跳给 eureka server 端的频率，默认 30 秒
+    lease-renewal-interval-in-seconds: 30
+    # Eureka Server 至上一次收到 client 的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则移除该 Instance，默认 90 秒
+    lease-expiration-duration-in-seconds: 90
+    metadata-map:
+      service-name: client
+  client:
+    # 开启健康检查
+    healthcheck:
+      enabled: true
+    # 注册到Eureka的注册中心
+    register-with-eureka: true
+    # 获取注册实例列表
+    fetch-registry: true
+    #定义去eureka服务端获取服务列表的时间间隔
+    registry-fetch-interval-seconds: 30
+    service-url:
+      # 配置注册中心地址
+      defaultZone: http://root:root@standalone:8000/eureka/

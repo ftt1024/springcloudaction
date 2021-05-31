@@ -1,0 +1,32 @@
+# 指定运行端口
+server:
+  port: 8003
+
+# 指定服务名称
+spring:
+  application:
+    name: eureka-server
+
+# 指定主机地址
+eureka:
+  instance:
+    hostname: eureka8003
+    #定义服务多久去注册中心续约
+    lease-renewal-interval-in-seconds: 30
+    #定义服务多久不去续约认为服务失效
+    lease-expiration-duration-in-seconds: 90
+    metadata-map:
+      zone: beijing #所在区域
+    #是否优先使用ip来作为主机名
+    prefer-ip-address: true
+  client:
+    # 指定是否从注册中心获取服务(注册中心不需要开启)
+    fetch-registry: false
+    # 指定是否将服务注册到注册中心(注册中心不需要开启)
+    register-with-eureka: false
+    #定义去eureka服务端获取服务列表的时间间隔
+    registry-fetch-interval-seconds: 30
+    serviceUrl:
+      defaultZone: http://${eureka-server.eureka8002.host}:${eureka-server.eureka8002.port}/eureka,http://${eureka-server.eureka8001.host}:${eureka-server.eureka8001.port}/eureka
+  server: #eureka服务端配置
+    enable-self-preservation: false #关闭eureka服务端的保护机制

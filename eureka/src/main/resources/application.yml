@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      # 配置spring security登录用户名和密码
+      name: root
+      password: root
+
+
+eureka-server:
+  standalone:
+    host: localhost
+    port: 8000
+  eureka8001:
+    host: eureka8001
+    port: 8001
+  eureka8002:
+    host: eureka8002
+    port: 8002
+  eureka8003:
+    host: eureka8003
+    port: 8003
+
+
+# 指定主机地址
+eureka:
+  instance:
+    hostname: eureka8003
+    #定义服务多久去注册中心续约
+    lease-renewal-interval-in-seconds: 30
+    #定义服务多久不去续约认为服务失效
+    lease-expiration-duration-in-seconds: 90
+    metadata-map:
+      #所在区域
+      zone: beijing
+    #是否优先使用ip来作为主机名
+    prefer-ip-address: true
+  client:
+    # 指定是否从注册中心获取服务(注册中心不需要开启)
+    fetch-registry: false
+    # 指定是否将服务注册到注册中心(注册中心不需要开启)
+    register-with-eureka: false
+    #定义去eureka服务端获取服务列表的时间间隔
+    registry-fetch-interval-seconds: 30
+    serviceUrl:
+      defaultZone: http://${eureka-server.standalone.host}:${eureka-server.standalone.port}/eureka
+  server: #eureka服务端配置
+    # 关闭eureka服务端的保护机制
+    enable-self-preservation: false
+    # 清理间隔时间，默认 60000 毫秒
+    eureka.server.eviction-interval-timer-in-ms: 5000
+server:
+  port: 8000

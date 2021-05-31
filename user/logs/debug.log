@@ -1,0 +1,18 @@
+[2021-05-30 22:18:23] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==>  Preparing: SELECT * FROM user WHERE name like concat('%',?,'%')
+[2021-05-30 22:18:23] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==> Parameters: 我(String)
+[2021-05-30 22:18:23] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - <==      Total: 1
+[2021-05-30 22:18:23] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==>  Preparing: SELECT * FROM user WHERE code = ?
+[2021-05-30 22:18:23] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==> Parameters: C00001(String)
+[2021-05-30 22:18:23] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - <==      Total: 1
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==>  Preparing: SELECT * FROM user WHERE name like concat('%',?,'%')
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==> Parameters: 我(String)
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - <==      Total: 1
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==>  Preparing: INSERT INTO user ( code, name, sex ) VALUES ( ?, ?, ? )
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==> Parameters: C00002(String), 2号员工(String), 0(String)
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - <==    Updates: 1
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==>  Preparing: SELECT code,password,name,sex,birth_date,cn_type,cn,mobile,home_phone,email,last_deucation,degree_name,joinwork_date,enable_state,trnsevent,psn_type,crean_time,retire_date,major_corp,dept_name,job_glbdef1,post_name,seq,job_name,job_type_name,job_grade_name,job_rank_name,is_pass,ts,age,org_code,pk_org,superior,leader,dept_code,post_code,job_code,portrait_url,mp,create_id,create_time,update_id,update_time,lcsszbm,lcsgrzs,grjj,qht,cyzg,portrait_url_richgo,wechat_qr_code,title_type,title_value,mp_portrait_url,mobile_is_show,wechat_id,status,portrait_url_no_auth,portrait_no_auth_status,mz,zzmm,hkxz,tsrc,rztsrc,principal FROM user
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==> Parameters: 
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - <==      Total: 2
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==>  Preparing: SELECT * FROM user WHERE code = ?
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - ==> Parameters: C00001(String)
+[2021-05-30 22:22:33] DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 137 debug - <==      Total: 1
