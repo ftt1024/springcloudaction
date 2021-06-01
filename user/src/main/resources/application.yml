@@ -1,7 +1,7 @@
 # 指定运行端口
 server:
   port: 8012
-  shutdown: graceful
+  # shutdown: graceful
   timeout-per-shutdown-phase: 20
 
 public_key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANzHZRwpMLSbFand6Q7FB394+zEOkPac1ZXPfHA1GfDSShzx2MmhMmoCaw0LGJe0YDjin1GTd0mugLtzAQfIcwMCAwEAAQ==
@@ -10,8 +10,8 @@ public_key: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANzHZRwpMLSbFand6Q7FB394+zEOkPac1ZXP
 spring:
   application:
     name: user-service
+# 数据库访问配置, 使用druid数据源(默认数据源是HikariDataSource)
   datasource:
-    # 数据库访问配置, 使用druid数据源(默认数据源是HikariDataSource)
 #    type: com.alibaba.druid.pool.DruidDataSource
 #    privateKey:MIIBVgIBADANBgkqhkiG9w0BAQEFAASCAUAwggE8AgEAAkEA3MdlHCkwtJsVqd3pDsUHf3j7MQ6Q9pzVlc98cDUZ8NJKHPHYyaEyagJrDQsYl7RgOOKfUZN3Sa6Au3MBB8hzAwIDAQABAkEAugKE/aT2lDPVnLiKkxcNqiiT+lD7ccvRZ9bYUPFsWahCMJAZwLVzw7llL86NqTg8t8z2BEKFiKE5Z9Vppa4ygQIhAPglq4TQeNIARRKjPhxRyGY0tUJUffqzBgJaUDHG39sXAiEA48QBN6HZk0JJzbnAPOxbhJZFCYdkhMVccsPgfAt2KvUCIQCicF5gGewNZFnTAoOFHFA3/6bsHc0+EHUNkztN6mbdzwIgaNsEYHMvcj7TMVWxbZq2ayyu7bsaCJG/hMouX4z7Qr0CIQCcsWXhPA7f3UU8uXP926L7v5nERS7eX/h6NRvXgiKLDA==
 #    publicKey:MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANzHZRwpMLSbFand6Q7FB394+zEOkPac1ZXPfHA1GfDSShzx2MmhMmoCaw0LGJe0YDjin1GTd0mugLtzAQfIcwMCAwEAAQ==
@@ -62,6 +62,30 @@ spring:
       useGlobalDataSourceStat: true
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
       syncInit: true
+# redis 配置
+  cache:
+    type: redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 5
+    password: #123456
+    # 连接超时时间 单位 ms（毫秒）
+    timeout: 3000
+    #=========redis线程池设置=========
+    # 连接池中的最大空闲连接，默认值也是8。
+    pool:
+      max-idle: 10
+      #连接池中的最小空闲连接，默认值也是0。
+      min-idle: 5
+      # 如果赋值为-1，则表示不限制；pool已经分配了maxActive个jedis实例，则此时pool的状态为exhausted(耗尽)。
+      max-active: 1000
+      # 等待可用连接的最大时间，单位毫秒，默认值为-1，表示永不超时
+      max-wait: 1000
+
+cache:
+  userId:
+    expire: 86400000
 
 ## MyBatis配置
 #mybatis:
@@ -80,9 +104,16 @@ mybatis-plus:
 
 # 设置日志显示：在控制台打印SQL
 logging:
+  pattern:
+    console: "[%d{yyyy-MM-dd HH:mm:ss:SSS}] [%-5level] [%t] [%X{RequestId}] [%X{TID}] [%c(%L)] %m%n"
   level:
     # 以包名前置，表示指定包下的操作指定日志级别。
-    cn.sf.user.mapper: DEBUG
+    cn.sf.user.mapper: ERROR
+    cn.sf.user.service: INFO
+    cn.sf.user.controller: INFO
+  file:
+    path: /data/logs/user/
+  config: F:\github\springcloudaction\user\src\main\resources\log4j2-spring.xml
 
 # actuator配置
 management:
@@ -124,3 +155,5 @@ eureka:
     service-url:
       # 配置注册中心地址
       defaultZone: http://root:root@standalone:8000/eureka/
+
+

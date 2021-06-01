@@ -10,6 +10,7 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 @Slf4j
+@Component
 public class GatewayRequestLogFilter implements GlobalFilter, Ordered {
 
     @Override

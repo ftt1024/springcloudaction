@@ -7,12 +7,14 @@ import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
+import java.util.UUID;
 
 /**
  * 打印入参和出参
@@ -31,6 +33,7 @@ public class LogAspect {
 
     @Around(value = POINT_CUT)
     public Object methodExecuteTime(ProceedingJoinPoint joinPoint) throws Throwable {
+        MDC.put("RequestId", UUID.randomUUID().toString());
         Object result = null;
         ZonedDateTime startDate = ZonedDateTime.now();
         Signature signature = joinPoint.getSignature();
@@ -62,6 +65,7 @@ public class LogAspect {
         } catch (Throwable e) {
             log.warn("接口日志打印异常：{}", e);
         }
+        MDC.clear();
         return result;
     }
 

@@ -18,7 +18,7 @@ import reactor.core.publisher.Mono;
 import java.nio.charset.Charset;
 
 @Slf4j
-@Component
+//@Component
 public class LogResponseGlobalFilter implements GlobalFilter, Ordered {
 
     private static final String REQUEST_PREFIX = "Request Info [ ";

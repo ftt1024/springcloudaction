@@ -18,5 +18,6 @@ import java.util.List;
 public interface IUserService extends IService<User> {
 
     UserVO getByCode(String code);
+
     List<UserVO> getListByCondition(UserBO userBO);
 }

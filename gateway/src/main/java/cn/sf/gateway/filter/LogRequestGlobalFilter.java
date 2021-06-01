@@ -32,7 +32,7 @@ import java.util.Map;
 
 // https://segmentfault.com/a/1190000017898354
 
-@Component
+//@Component
 public class LogRequestGlobalFilter
         implements GlobalFilter {
 

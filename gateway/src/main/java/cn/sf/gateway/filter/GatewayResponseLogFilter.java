@@ -18,7 +18,7 @@ import reactor.core.publisher.Mono;
 import java.nio.charset.Charset;
 
 @Slf4j
-@Component
+//@Component
 public class GatewayResponseLogFilter implements GlobalFilter, Ordered {
 
     @Override
@@ -45,7 +45,7 @@ public class GatewayResponseLogFilter implements GlobalFilter, Ordered {
                         return bufferFactory.wrap(uppedContent);
                     }));
                 }
-                log.info("response body:{}", body.toString());
+                log.info("Response body:{}", body.toString());
                 return super.writeWith(body);
             }
         };

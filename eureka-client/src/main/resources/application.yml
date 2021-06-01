@@ -71,8 +71,8 @@ feign:
         loggerLevel: BASIC
       # 单独某个服务配置
       customer-service:
-        connectTimeout: 500
-        readTimeout: 500
+        connectTimeout: 200
+        readTimeout: 300
         loggerLevel: full
       # 单独某个服务配置
       user-service:

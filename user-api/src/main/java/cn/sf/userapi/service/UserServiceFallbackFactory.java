@@ -18,6 +18,7 @@ public class UserServiceFallbackFactory implements FallbackFactory<UserService> 
         return new UserService() {
             @Override
             public String getById(String userId) {
+                log.info("熔断:{}", userId);
                 return Tips.SERVICE_NOT_AVAILABLE;
             }
         };
