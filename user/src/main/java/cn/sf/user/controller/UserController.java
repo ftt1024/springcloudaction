@@ -4,6 +4,8 @@ package cn.sf.user.controller;
 import cn.sf.common.constant.Tips;
 import cn.sf.user.aop.ARC;
 import cn.sf.user.aop.RCache;
+import cn.sf.user.aop.RCacheEvict;
+import cn.sf.user.aop.RCachePut;
 import cn.sf.user.constant.RedisKeyConstant;
 import cn.sf.user.entity.UserBO;
 import cn.sf.user.model.User;
@@ -43,8 +45,10 @@ public class UserController implements UserService {
         return result;
     }
 
-    @PostMapping(value = "add", consumes = MediaType.APPLICATION_JSON_VALUE)
     @ARC(value = "#userBO.code", key = "ANTI-RC:", expire = 5, timeUnit = TimeUnit.SECONDS)
+    // @RCachePut(key = RedisKeyConstant.USER_ID, value = "#userBO.code", expire = 86400000)
+    @RCacheEvict(key = RedisKeyConstant.USER_ID, value = "#userBO.code")
+    @PostMapping(value = "add", consumes = MediaType.APPLICATION_JSON_VALUE)
     public String add(@RequestBody @Validated UserBO userBO) {
         User user = iUserService.getById(userBO.getCode());
         if (user != null) {
@@ -58,5 +62,29 @@ public class UserController implements UserService {
             return "success";
         }
         return "fail";
+    }
+
+    @ARC(value = "#userBO.code", key = "ANTI-RC:", expire = 5, timeUnit = TimeUnit.SECONDS)
+    // @RCachePut(key = RedisKeyConstant.USER_ID, value = "#userBO.code", expire = 86400000)
+    @RCacheEvict(key = RedisKeyConstant.USER_ID, value = "#userBO.code")
+    @PostMapping(value = "update", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public String update(@RequestBody @Validated UserBO userBO) {
+        User user = new User();
+        BeanUtils.copyProperties(userBO, user);
+        boolean updated = iUserService.updateById(user);
+        if (!updated) {
+            return "fail";
+        }
+        return "success";
+    }
+
+    @RCacheEvict(key = RedisKeyConstant.USER_ID, value = "#id")
+    @DeleteMapping("/id/{id}")
+    public String delete(@PathVariable String id) {
+        boolean deleted = iUserService.removeById(id);
+        if (!deleted) {
+            return "fail";
+        }
+        return "success";
     }
 }

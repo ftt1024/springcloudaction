@@ -111,8 +111,8 @@ logging:
     cn.sf.user.mapper: ERROR
     cn.sf.user.service: INFO
     cn.sf.user.controller: INFO
-  file:
-    path: /data/logs/user/
+#  file:
+#    path: /data/logs/user/
   config: F:\github\springcloudaction\user\src\main\resources\log4j2-spring.xml
 
 # actuator配置

@@ -10,11 +10,11 @@
         <module name="user" />
         <module name="gateway" />
         <module name="eureka-server" />
+        <module name="basic" />
         <module name="eureka-client" />
         <module name="customer" />
         <module name="user-api" />
         <module name="commonutil" />
-        <module name="basic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

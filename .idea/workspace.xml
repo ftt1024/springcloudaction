@@ -2,30 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f797e745-8c35-4c3a-b8d7-a4675cd0d363" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/src/main/java/cn/sf/eurekaclient/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/GatewayRequestLogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/GatewayRequestLogFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/GatewayResponseLogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/GatewayResponseLogFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/LogRequestGlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/LogRequestGlobalFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/LogResponseGlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/LogResponseGlobalFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/druid-sql.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/druid-sql.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-api/src/main/java/cn/sf/userapi/service/UserServiceFallbackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-api/src/main/java/cn/sf/userapi/service/UserServiceFallbackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/aop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/aop/LogAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/entity/BaseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/entity/BaseResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/entity/UserBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/entity/UserBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/cn/sf/user/service/IUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/log4j2.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user/src/main/java/cn/sf/user/aop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/service/auth" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -82,23 +68,23 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\github\springcloudaction\user\src\main\resources\mapper" />
+      <recent name="F:\github\springcloudaction\user\src\main\java\cn\sf\user\mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.sf.user.aop" />
+      <recent name="cn.sf.gateway.config" />
+      <recent name="cn.sf.gateway.service" />
+      <recent name="cn.sf.user.util" />
+      <recent name="cn.sf.user.config" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\github\springcloudaction\gateway\src\main\java\cn\sf\gateway\service\auth" />
       <recent name="F:\github\springcloudaction\user\src\main\java\cn\sf\user\aop" />
       <recent name="F:\github\springcloudaction" />
       <recent name="F:\github\springcloudaction\basic\src\main\resources" />
       <recent name="F:\github\springcloudaction\basic\src\main\java" />
-      <recent name="F:\github\springcloudaction\gateway\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.sf.user.aop" />
-      <recent name="cn.sf.user.util" />
-      <recent name="cn.sf.user.config" />
-      <recent name="cn.sf.eurekaclient.service" />
-      <recent name="cn.sf.userapi.service" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\github\springcloudaction\user\src\main\resources\mapper" />
-      <recent name="F:\github\springcloudaction\user\src\main\java\cn\sf\user\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,6 +329,9 @@
       <workItem from="1622336541846" duration="15185000" />
       <workItem from="1622381694567" duration="5781000" />
       <workItem from="1622433436393" duration="33566000" />
+      <workItem from="1622639338302" duration="535000" />
+      <workItem from="1622639891447" duration="5997000" />
+      <workItem from="1622732764582" duration="124000" />
     </task>
     <servers />
   </component>
@@ -354,10 +343,38 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/service/auth/AuthService.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/AuthGlobalFilter.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/AuthGlobalFilter.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway/src/main/java/cn/sf/gateway/filter/AuthGlobalFilter.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

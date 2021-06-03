@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: gateway
+  #监控系统的授权信息
+  boot:
+    admin:
+      client:
+        username: admin
+        password: admin
   cloud:
     gateway:
       # 全局默认过滤器
@@ -14,6 +20,7 @@ spring:
         # 如果有多个参数则重写一行设置不同的参数
         - AddResponseHeader=Response-Default-Name,cnsf
         - AddResponseHeader=Response-From,cnsf
+        - Log
       routes:
 #        - id: between_route
 #          uri: http://127.0.0.1:8011
@@ -28,6 +35,7 @@ spring:
 #          predicates:
 #            - Before=2021-05-30T09:30:47.789+08:00
         - id: user_path_route
+          # lb协议会激活LoadBalancerClient来解析后续的地址，自动根据注册的服务实例进行负载均衡
           uri: lb://user-service
           predicates:
             - Path=/user/**
@@ -83,7 +91,6 @@ management:
     shutdown:
       enabled: true # 启用shutdown端点优雅关机 POST http://localhost:10212/actuator/shutdown
 
-
 # eureka配置
 eureka:
   instance:
@@ -109,3 +116,12 @@ eureka:
     service-url:
       # 配置注册中心地址
       defaultZone: http://root:root@standalone:8000/eureka/
+
+# 权限token的相关配置
+auth:
+  token:
+    header-key-of-token: X-Access-Token  #需要刷新token时，后端response携带的token在http header中的name
+    max-alive-minute: 30    #JWT token的过期时间，单位分钟
+    max-idle-minute: 60     #最多允许用户多长时间不操作后,无需再次登录仍然可以刷新token 单位分钟
+    account-alias: account  #token中保存的用户唯一标识的key name
+
